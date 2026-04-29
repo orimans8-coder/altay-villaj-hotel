@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Altay Villaj Hotel | Номера</title>
+
+    <meta
+      name="description"
+      content="Номера Altay Villaj Hotel. Выберите подходящий номер и отправьте заявку на бронирование."
+    />
+
+    <meta property="og:title" content="Altay Villaj Hotel | Номера" />
+    <meta
+      property="og:description"
+      content="Выберите подходящий номер в Altay Villaj Hotel и отправьте заявку на бронирование."
+    />
+    <meta property="og:image" content="images/17.jpeg" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/jpeg" href="images/gal8.jpeg" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  </head>
+
+  <body>
+    <header class="site-header" id="siteHeader">
+      <div class="container header-wrap">
+        <a href="index.html" class="logo">ALTAY VILLAJ HOTEL</a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="nav" id="mainNav">
+          <a href="index.html" data-i18n="nav_home">Главная</a>
+
+          <a href="about.html" data-i18n="nav_about">О нас</a>
+
+          <a href="rooms.html" class="active-page" data-i18n="nav_rooms">
+            Номера
+          </a>
+
+          <a href="index.html#gallery" data-i18n="nav_gallery">Галерея</a>
+
+          <a href="reviews.html" data-i18n="nav_reviews">Отзывы</a>
+
+          <a href="index.html#faq" data-i18n="nav_faq">FAQ</a>
+
+          <a href="index.html#contact" data-i18n="nav_contact">Контакты</a>
+        </nav>
+
+        <div class="lang-switcher">
+          <button type="button" class="lang-btn active" data-lang="ru">
+            RU
+          </button>
+          <button type="button" class="lang-btn" data-lang="ky">KG</button>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+          <button type="button" class="lang-btn" data-lang="tr">TR</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section page-top rooms-page-top">
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <h1 data-i18n="rooms_title">Номера</h1>
+            <p data-i18n="rooms_subtitle">
+              Выберите подходящий вариант для отдыха
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section rooms-section">
+        <div class="container">
+          <div class="rooms-grid">
+            <article class="room-card" data-aos="fade-up">
+              <div class="room-image-wrap">
+                <img src="images/14.jpeg" alt="Стандартный номер" />
+                <span class="room-badge" data-i18n="room_1_badge">
+                  Популярный
+                </span>
+              </div>
+
+              <div class="room-info">
+                <div class="room-top">
+                  <h3 data-i18n="room_1_title">Стандартный номер</h3>
+
+                  <div class="room-price">
+                    <strong data-i18n="room_price_1">2500 сом</strong>
+                    <span data-i18n="room_per_night">/ ночь</span>
+                  </div>
+                </div>
+
+                <p data-i18n="room_1_text">
+                  Уютный номер для спокойного отдыха.
+                </p>
+
+                <ul class="room-features">
+                  <li data-i18n="room_feature_1">Удобная кровать</li>
+                  <li data-i18n="room_feature_2">Чистый номер</li>
+                  <li data-i18n="room_feature_3">Спокойная атмосфера</li>
+                </ul>
+
+                <button
+                  type="button"
+                  class="btn primary-btn room-btn room-book-btn"
+                  data-room="Стандартный номер"
+                  data-i18n="room_book_btn"
+                >
+                  Забронировать
+                </button>
+              </div>
+            </article>
+
+            <article class="room-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="room-image-wrap">
+                <img src="images/17.jpeg" alt="Просторный номер" />
+                <span
+                  class="room-badge room-badge-soft"
+                  data-i18n="room_2_badge"
+                >
+                  Для семьи
+                </span>
+              </div>
+
+              <div class="room-info">
+                <div class="room-top">
+                  <h3 data-i18n="room_2_title">Просторный номер</h3>
+
+                  <div class="room-price">
+                    <strong data-i18n="room_price_2">3500 сом</strong>
+                    <span data-i18n="room_per_night">/ ночь</span>
+                  </div>
+                </div>
+
+                <p data-i18n="room_2_text">
+                  Более просторный вариант для семьи или друзей.
+                </p>
+
+                <ul class="room-features">
+                  <li data-i18n="room_feature_1">Удобная кровать</li>
+                  <li data-i18n="room_feature_2">Чистый номер</li>
+                  <li data-i18n="room_feature_3">Спокойная атмосфера</li>
+                </ul>
+
+                <button
+                  type="button"
+                  class="btn primary-btn room-btn room-book-btn"
+                  data-room="Просторный номер"
+                  data-i18n="room_book_btn"
+                >
+                  Забронировать
+                </button>
+              </div>
+            </article>
+
+            <article class="room-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="room-image-wrap">
+                <img src="images/23.jpeg" alt="Номер с видом" />
+                <span
+                  class="room-badge room-badge-gold"
+                  data-i18n="room_3_badge"
+                >
+                  Красивый вид
+                </span>
+              </div>
+
+              <div class="room-info">
+                <div class="room-top">
+                  <h3 data-i18n="room_3_title">Номер с видом</h3>
+
+                  <div class="room-price">
+                    <strong data-i18n="room_price_3">4500 сом</strong>
+                    <span data-i18n="room_per_night">/ ночь</span>
+                  </div>
+                </div>
+
+                <p data-i18n="room_3_text">
+                  Комфортный номер с красивым видом и спокойной атмосферой.
+                </p>
+
+                <ul class="room-features">
+                  <li data-i18n="room_feature_1">Удобная кровать</li>
+                  <li data-i18n="room_feature_2">Чистый номер</li>
+                  <li data-i18n="room_feature_3">Спокойная атмосфера</li>
+                </ul>
+
+                <button
+                  type="button"
+                  class="btn primary-btn room-btn room-book-btn"
+                  data-room="Номер с видом"
+                  data-i18n="room_book_btn"
+                >
+                  Забронировать
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section booking" id="booking">
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <h2 data-i18n="booking_title">Бронирование</h2>
+            <p data-i18n="booking_subtitle">
+              Заполните форму, и мы свяжемся с вами
+            </p>
+          </div>
+
+          <div class="booking-layout">
+            <div class="booking-info-card" data-aos="fade-right">
+              <h3 data-i18n="booking_info_title">Как проходит бронирование?</h3>
+
+              <div class="booking-info-step">
+                <i class="fa-solid fa-pen-to-square"></i>
+
+                <div>
+                  <h4 data-i18n="booking_step_1_title">Заполните заявку</h4>
+                  <p data-i18n="booking_step_1_text">
+                    Укажите имя, контакты, даты заезда и тип номера.
+                  </p>
+                </div>
+              </div>
+
+              <div class="booking-info-step">
+                <i class="fa-solid fa-phone-volume"></i>
+
+                <div>
+                  <h4 data-i18n="booking_step_2_title">Мы свяжемся с вами</h4>
+                  <p data-i18n="booking_step_2_text">
+                    Администратор уточнит свободные места и детали проживания.
+                  </p>
+                </div>
+              </div>
+
+              <div class="booking-info-step">
+                <i class="fa-solid fa-circle-check"></i>
+
+                <div>
+                  <h4 data-i18n="booking_step_3_title">Подтверждение</h4>
+                  <p data-i18n="booking_step_3_text">
+                    После подтверждения ваша бронь будет сохранена.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <form
+              id="reservationForm"
+              class="booking-form"
+              data-aos="fade-left"
+            >
+              <input
+                type="text"
+                id="guestName"
+                placeholder="Ваше имя"
+                data-i18n-placeholder="booking_name"
+                required
+              />
+
+              <input
+                type="tel"
+                id="guestPhone"
+                placeholder="Номер телефона"
+                data-i18n-placeholder="booking_phone"
+                required
+              />
+
+              <input
+                type="email"
+                id="guestEmail"
+                placeholder="Email"
+                data-i18n-placeholder="booking_email"
+                required
+              />
+
+              <select id="roomType" required>
+                <option value="" data-i18n="booking_room_default">
+                  Выберите номер
+                </option>
+
+                <option
+                  value="Стандартный номер"
+                  data-i18n="booking_room_standard"
+                >
+                  Стандартный номер
+                </option>
+
+                <option
+                  value="Просторный номер"
+                  data-i18n="booking_room_semilux"
+                >
+                  Просторный номер
+                </option>
+
+                <option value="Номер с видом" data-i18n="booking_room_family">
+                  Номер с видом
+                </option>
+              </select>
+
+              <input
+                type="number"
+                id="guestCount"
+                placeholder="Количество гостей"
+                data-i18n-placeholder="booking_guests"
+                min="1"
+                required
+              />
+
+              <div class="date-field">
+                <label for="checkin" data-i18n="booking_checkin_label">
+                  Дата заезда
+                </label>
+                <input type="date" id="checkin" required />
+              </div>
+
+              <div class="date-field">
+                <label for="checkout" data-i18n="booking_checkout_label">
+                  Дата выезда
+                </label>
+                <input type="date" id="checkout" required />
+              </div>
+
+              <textarea
+                id="guestComment"
+                placeholder="Дополнительный комментарий"
+                data-i18n-placeholder="booking_comment"
+              ></textarea>
+
+              <button
+                type="submit"
+                class="btn primary-btn"
+                id="submitBtn"
+                data-i18n="booking_submit"
+              >
+                Отправить заявку
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <div class="container">
+          <div class="cta-box" data-aos="zoom-in">
+            <h2 data-i18n="cta_title">Готовы к отдыху?</h2>
+
+            <p data-i18n="cta_text">
+              Тишина, красивая природа и уютная гостиница уже ждут вас.
+            </p>
+
+            <a
+              href="index.html#contact"
+              class="btn secondary-btn"
+              data-i18n="contact_title"
+            >
+              Связаться с нами
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer footer-pro">
+      <div class="container footer-grid">
+        <div>
+          <h3>ALTAY VILLAJ HOTEL</h3>
+
+          <p data-i18n="footer_about_text">
+            Уютный отель для спокойного отдыха среди красивой природы
+            Таш-Башата.
+          </p>
+        </div>
+
+        <div>
+          <h4 data-i18n="footer_nav_title">Навигация</h4>
+
+          <a href="index.html" data-i18n="nav_home">Главная</a>
+          <a href="about.html" data-i18n="nav_about">О нас</a>
+          <a href="rooms.html" data-i18n="nav_rooms">Номера</a>
+          <a href="index.html#gallery" data-i18n="nav_gallery">Галерея</a>
+          <a href="reviews.html" data-i18n="nav_reviews">Отзывы</a>
+          <a href="index.html#faq" data-i18n="nav_faq">FAQ</a>
+          <a href="index.html#contact" data-i18n="nav_contact">Контакты</a>
+        </div>
+
+        <div>
+          <h4 data-i18n="nav_contact">Контакты</h4>
+
+          <p>+996 501 595 598</p>
+          <p>example@gmail.com</p>
+          <p data-i18n="home_card_location">Таш-Башат, Кыргызстан</p>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p data-i18n="footer_text">
+          © 2026 Altay Villaj Hotel. Все права защищены.
+        </p>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 900,
+        once: true,
+      });
+    </script>
+
+    <script src="lang.js"></script>
+    <script type="module" src="script.js"></script>
+    <script src="float-actions.js"></script>
+    <script src="rooms-lightbox.js"></script>
+    <script src="secret-admin.js"></script>
+  </body>
+</html>

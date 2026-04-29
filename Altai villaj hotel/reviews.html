@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Altay Villaj Hotel | Отзывы</title>
+
+    <meta
+      name="description"
+      content="Отзывы гостей Altay Villaj Hotel. Прочитайте впечатления гостей и оставьте свой отзыв."
+    />
+
+    <meta property="og:title" content="Altay Villaj Hotel | Отзывы" />
+    <meta
+      property="og:description"
+      content="Отзывы гостей Altay Villaj Hotel. Оставьте своё мнение о проживании и отдыхе."
+    />
+    <meta property="og:image" content="images/10.jpeg" />
+    <meta property="og:type" content="website" />
+
+    <link rel="icon" type="image/jpeg" href="images/gal8.jpeg" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  </head>
+
+  <body>
+    <header class="site-header" id="siteHeader">
+      <div class="container header-wrap">
+        <a href="index.html" class="logo">ALTAY VILLAJ HOTEL</a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="nav" id="mainNav">
+          <a href="index.html" data-i18n="nav_home">Главная</a>
+
+          <a href="about.html" data-i18n="nav_about">О нас</a>
+
+          <a href="rooms.html" data-i18n="nav_rooms">Номера</a>
+
+          <a href="index.html#gallery" data-i18n="nav_gallery">Галерея</a>
+
+          <a href="reviews.html" class="active-page" data-i18n="nav_reviews">
+            Отзывы
+          </a>
+
+          <a href="index.html#faq" data-i18n="nav_faq">FAQ</a>
+
+          <a href="index.html#contact" data-i18n="nav_contact">Контакты</a>
+        </nav>
+
+        <div class="lang-switcher">
+          <button type="button" class="lang-btn active" data-lang="ru">
+            RU
+          </button>
+          <button type="button" class="lang-btn" data-lang="ky">KG</button>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+          <button type="button" class="lang-btn" data-lang="tr">TR</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section page-top">
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <h1 data-i18n="reviews_title">Отзывы гостей</h1>
+            <p data-i18n="reviews_subtitle">
+              Настоящие впечатления о нашем месте отдыха
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reviews">
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <h2 data-i18n="reviews_title">Отзывы гостей</h2>
+            <p data-i18n="reviews_subtitle">
+              Настоящие впечатления о нашем месте отдыха
+            </p>
+          </div>
+
+          <div class="reviews-grid" id="reviewsList">
+            <div class="review-card review-empty-card">
+              <div class="review-stars">★★★★★</div>
+              <p data-i18n="reviews_empty_text">Пока отзывов нет.</p>
+              <h4>Altay Villaj Hotel</h4>
+            </div>
+          </div>
+
+          <div class="review-form-wrap" data-aos="fade-up">
+            <h3 class="review-form-title" data-i18n="review_form_title">
+              Оставить отзыв
+            </h3>
+
+            <form id="reviewForm" class="review-form">
+              <input
+                type="text"
+                id="reviewName"
+                placeholder="Ваше имя"
+                data-i18n-placeholder="review_name"
+                required
+              />
+
+              <select id="reviewRating" required>
+                <option value="" data-i18n="review_rating_default">
+                  Оценка
+                </option>
+
+                <option value="5" data-i18n="review_rating_5">
+                  5 — Отлично
+                </option>
+
+                <option value="4" data-i18n="review_rating_4">
+                  4 — Хорошо
+                </option>
+
+                <option value="3" data-i18n="review_rating_3">
+                  3 — Нормально
+                </option>
+
+                <option value="2" data-i18n="review_rating_2">2 — Плохо</option>
+
+                <option value="1" data-i18n="review_rating_1">
+                  1 — Очень плохо
+                </option>
+              </select>
+
+              <textarea
+                id="reviewText"
+                placeholder="Напишите ваш отзыв"
+                data-i18n-placeholder="review_text"
+                required
+              ></textarea>
+
+              <button
+                type="submit"
+                class="btn primary-btn"
+                id="reviewSubmitBtn"
+                data-i18n="review_submit"
+              >
+                Отправить отзыв
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <h2 data-i18n="reviews_why_title">Почему отзывы важны?</h2>
+            <p data-i18n="reviews_why_text">
+              Каждый отзыв помогает нам улучшать сервис и делать отдых гостей
+              ещё комфортнее.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-card" data-aos="fade-up">
+              <h3>
+                <i class="fa-solid fa-circle-check"></i>
+                <span data-i18n="reviews_verified_title">
+                  Проверенные отзывы
+                </span>
+              </h3>
+
+              <p data-i18n="reviews_verified_text">
+                На странице отображаются только подтверждённые отзывы после
+                модерации в админ-панели.
+              </p>
+            </div>
+
+            <div class="contact-card" data-aos="fade-up" data-aos-delay="100">
+              <h3>
+                <i class="fa-solid fa-star"></i>
+                <span data-i18n="reviews_opinion_title">Мнение гостей</span>
+              </h3>
+
+              <p data-i18n="reviews_opinion_text">
+                Гости могут оценить проживание, атмосферу, удобство номеров и
+                общее впечатление от отдыха.
+              </p>
+            </div>
+
+            <div class="contact-card" data-aos="fade-up" data-aos-delay="200">
+              <h3>
+                <i class="fa-solid fa-heart"></i>
+                <span data-i18n="reviews_important_title">
+                  Нам важно ваше мнение
+                </span>
+              </h3>
+
+              <p data-i18n="reviews_important_text">
+                Каждый отзыв помогает улучшать сервис и делать отдых гостей ещё
+                лучше и комфортнее.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <div class="container">
+          <div class="cta-box" data-aos="zoom-in">
+            <h2 data-i18n="cta_title">Готовы к отдыху?</h2>
+
+            <p data-i18n="cta_text">
+              Тишина, красивая природа и уютная гостиница уже ждут вас.
+            </p>
+
+            <a
+              href="rooms.html#booking"
+              class="btn secondary-btn"
+              data-i18n="cta_btn"
+            >
+              Перейти к форме бронирования
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer footer-pro">
+      <div class="container footer-grid">
+        <div>
+          <h3>ALTAY VILLAJ HOTEL</h3>
+
+          <p data-i18n="footer_about_text">
+            Уютный отель для спокойного отдыха среди красивой природы
+            Таш-Башата.
+          </p>
+        </div>
+
+        <div>
+          <h4 data-i18n="footer_nav_title">Навигация</h4>
+
+          <a href="index.html" data-i18n="nav_home">Главная</a>
+          <a href="about.html" data-i18n="nav_about">О нас</a>
+          <a href="rooms.html" data-i18n="nav_rooms">Номера</a>
+          <a href="index.html#gallery" data-i18n="nav_gallery">Галерея</a>
+          <a href="reviews.html" data-i18n="nav_reviews">Отзывы</a>
+          <a href="index.html#faq" data-i18n="nav_faq">FAQ</a>
+          <a href="index.html#contact" data-i18n="nav_contact">Контакты</a>
+        </div>
+
+        <div>
+          <h4 data-i18n="nav_contact">Контакты</h4>
+
+          <p>+996 501 595 598</p>
+          <p>example@gmail.com</p>
+          <p data-i18n="home_card_location">Таш-Башат, Кыргызстан</p>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p data-i18n="footer_text">
+          © 2026 Altay Villaj Hotel. Все права защищены.
+        </p>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 900,
+        once: true,
+      });
+    </script>
+
+    <script src="lang.js"></script>
+    <script type="module" src="script.js"></script>
+    <script src="float-actions.js"></script>
+  </body>
+</html>

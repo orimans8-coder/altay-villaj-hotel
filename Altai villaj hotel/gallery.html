@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Altay Villaj Hotel | Галерея</title>
+
+    <meta
+      name="description"
+      content="Галерея Altay Villaj Hotel — фото и видео природы, номеров, еды и атмосферы отдыха в Таш-Башате."
+    />
+
+    <meta property="og:title" content="Altay Villaj Hotel | Галерея" />
+    <meta
+      property="og:description"
+      content="Фото и видео Altay Villaj Hotel, природы Таш-Башата и атмосферы отдыха."
+    />
+    <meta property="og:image" content="images/gal16.jpeg" />
+    <meta property="og:type" content="website" />
+
+    <link rel="icon" type="image/jpeg" href="images/gal8.jpeg" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="gallery-unusual.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  </head>
+
+  <body>
+    <header class="site-header" id="siteHeader">
+      <div class="container header-wrap">
+        <a href="index.html" class="logo">ALTAY VILLAJ HOTEL</a>
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          type="button"
+          aria-label="Открыть меню"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="nav" id="mainNav">
+          <a href="index.html" data-i18n="nav_home">Главная</a>
+          <a href="about.html" data-i18n="nav_about">О нас</a>
+          <a href="rooms.html" data-i18n="nav_rooms">Номера</a>
+          <a href="gallery.html" class="active-page" data-i18n="nav_gallery"
+            >Галерея</a
+          >
+          <a href="reviews.html" data-i18n="nav_reviews">Отзывы</a>
+          <a href="index.html#faq" data-i18n="nav_faq">FAQ</a>
+          <a href="index.html#contact" data-i18n="nav_contact">Контакты</a>
+        </nav>
+
+        <div class="lang-switcher">
+          <button type="button" class="lang-btn active" data-lang="ru">
+            RU
+          </button>
+          <button type="button" class="lang-btn" data-lang="ky">KG</button>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+          <button type="button" class="lang-btn" data-lang="tr">TR</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section
+        class="section gallery-section gallery-premium-section gallery-page-clean"
+      >
+        <div class="container">
+          <div class="section-title gallery-title-wrap" data-aos="fade-up">
+            <span class="gallery-kicker">ALTAY VILLAJ HOTEL</span>
+            <h1 data-i18n="gallery_title">Галерея</h1>
+            <p data-i18n="gallery_page_text">
+              Фото и видео природы, номеров, еды и атмосферы Altay Villaj Hotel.
+            </p>
+          </div>
+
+          <div class="gallery-grid gallery-pro-grid gallery-full-grid">
+            <div
+              class="gallery-item gallery-video gallery-big"
+              data-aos="zoom-in"
+            >
+              <video
+                src="images/gal1.mp4"
+                muted
+                loop
+                playsinline
+                preload="metadata"
+              ></video>
+              <span class="gallery-photo-label" data-i18n="gallery_label_nature"
+                >Природа</span
+              >
+              <span class="gallery-video-badge">
+                <i class="fa-solid fa-play"></i>
+                <span data-i18n="gallery_video_badge">Видео</span>
+              </span>
+              <button
+                class="gallery-view-btn"
+                type="button"
+                data-i18n="gallery_watch_btn"
+              >
+                Смотреть
+              </button>
+            </div>
+
+            <div class="gallery-item gallery-video" data-aos="zoom-in">
+              <video
+                src="images/gal2.mp4"
+                muted
+                loop
+                playsinline
+                preload="metadata"
+              ></video>
+              <span
+                class="gallery-photo-label"
+                data-i18n="gallery_label_landscape"
+                >Пейзаж</span
+              >
+              <span class="gallery-video-badge">
+                <i class="fa-solid fa-play"></i>
+                <span data-i18n="gallery_video_badge">Видео</span>
+              </span>
+              <button
+                class="gallery-view-btn"
+                type="button"
+                data-i18n="gallery_watch_btn"
+              >
+                Смотреть
+              </button>
+            </div>
+
+            <div class="gallery-item" data-aos="zoom-in">
+              <img src="images/gal3.jpeg" alt="Зелёные просторы Таш-Башата" />
+              <span
+                class="gallery-photo-label"
+                data-i18n="gallery_label_atmosphere"
+                >Атмосфера</span
+              >
+              <button
+                class="gallery-view-btn"
+                type="button"
+                data-i18n="gallery_view_btn"
+              >
+                Посмотреть
+              </button>
+            </div>
+
+            <div class="gallery-item" data-aos="zoom-in">
+              <img src="images/gal4.jpeg" alt="Зимний вид на горы" />
+              <span
+                class="gallery-photo-label"
+                data-i18n="gallery_label_mountains"
+                >Горы</span
+              >
+              <button
+                class="gallery-view-btn"
+                type="button"
+                data-i18n="gallery_view_btn"
+              >
+                Посмотреть
+              </button>
+            </div>
+
+            <div class="gallery-item" data-aos="zoom-in">
+              <img src="images/gal6.jpeg" alt="Ущелье и скалы рядом с отелем" />
+              <span class="gallery-photo-label" data-i18n="gallery_label_route"
+                >Маршрут</span
+              >
+              <button
+                class="gallery-view-btn"
+                type="button"
+                data-i18n="gallery_view_btn"
+              >
+                Посмотреть
+              </button>
+            </div>
+
+            <div class="gallery-item" data-aos="zoom-in">
+              <img src="images/gal7.jpeg" alt="Национальная еда для гостей" />
+              <span class="gallery-photo-label" data-i18n="gallery_label_food"
+                >Еда</span
+              >
+              <button
+                class="gallery-view-btn"
+                type="button"
+                data-i18n="gallery_view_btn"
+              >
+                Посмотреть
+              </button>
+            </div>
+
+            <div class="gallery-item" data-aos="zoom-in">
+              <img src="images/gal9.jpeg" alt="Историческая атмосфера места" />
+              <span
+                class="gallery-photo-label"
+                data-i18n="gallery_label_history"
+                >История</span
+              >
+              <button
+                class="gallery-view-btn"
+                type="button"
+                data-i18n="gallery_view_btn"
+              >
+                Посмотреть
+              </button>
+            </div>
+
+            <div class="gallery-item" data-aos="zoom-in">
+              <img src="images/gal10.jpeg" alt="Тихое место среди деревьев" />
+              <span
+                class="gallery-photo-label"
+                data-i18n="gallery_label_silence"
+                >Тишина</span
+              >
+              <button
+                class="gallery-view-btn"
+                type="button"
+                data-i18n="gallery_view_btn"
+              >
+                Посмотреть
+              </button>
+            </div>
+
+            <div class="gallery-item" data-aos="zoom-in">
+              <img src="images/gal11.jpeg" alt="Панорама села Таш-Башат" />
+              <span
+                class="gallery-photo-label"
+                data-i18n="gallery_label_village"
+                >Село</span
+              >
+              <button
+                class="gallery-view-btn"
+                type="button"
+                data-i18n="gallery_view_btn"
+              >
+                Посмотреть
+              </button>
+            </div>
+
+            <div class="gallery-item" data-aos="zoom-in">
+              <img src="images/gal12.jpeg" alt="Комната для гостей" />
+              <span class="gallery-photo-label" data-i18n="gallery_label_room"
+                >Номер</span
+              >
+              <button
+                class="gallery-view-btn"
+                type="button"
+                data-i18n="gallery_view_btn"
+              >
+                Посмотреть
+              </button>
+            </div>
+
+            <div class="gallery-item" data-aos="zoom-in">
+              <img src="images/gal13.jpeg" alt="Горы и зелёные поля" />
+              <span class="gallery-photo-label" data-i18n="gallery_label_view"
+                >Вид</span
+              >
+              <button
+                class="gallery-view-btn"
+                type="button"
+                data-i18n="gallery_view_btn"
+              >
+                Посмотреть
+              </button>
+            </div>
+
+            <div class="gallery-item" data-aos="zoom-in">
+              <img src="images/gal14.jpeg" alt="Летний пейзаж рядом с отелем" />
+              <span class="gallery-photo-label" data-i18n="gallery_label_summer"
+                >Лето</span
+              >
+              <button
+                class="gallery-view-btn"
+                type="button"
+                data-i18n="gallery_view_btn"
+              >
+                Посмотреть
+              </button>
+            </div>
+
+            <div class="gallery-item" data-aos="zoom-in">
+              <img src="images/gal15.jpeg" alt="Голубое небо и вид на долину" />
+              <span class="gallery-photo-label" data-i18n="gallery_label_valley"
+                >Долина</span
+              >
+              <button
+                class="gallery-view-btn"
+                type="button"
+                data-i18n="gallery_view_btn"
+              >
+                Посмотреть
+              </button>
+            </div>
+
+            <div class="gallery-item" data-aos="zoom-in">
+              <img src="images/gal16.jpeg" alt="Панорамный вид на природу" />
+              <span
+                class="gallery-photo-label"
+                data-i18n="gallery_label_panorama"
+                >Панорама</span
+              >
+              <button
+                class="gallery-view-btn"
+                type="button"
+                data-i18n="gallery_view_btn"
+              >
+                Посмотреть
+              </button>
+            </div>
+
+            <div class="gallery-item" data-aos="zoom-in">
+              <img src="images/gal17.jpeg" alt="Зимний горный пейзаж" />
+              <span class="gallery-photo-label" data-i18n="gallery_label_winter"
+                >Зима</span
+              >
+              <button
+                class="gallery-view-btn"
+                type="button"
+                data-i18n="gallery_view_btn"
+              >
+                Посмотреть
+              </button>
+            </div>
+
+            <div class="gallery-item gallery-video" data-aos="zoom-in">
+              <video
+                src="images/galkom.mp4"
+                muted
+                loop
+                playsinline
+                preload="metadata"
+              ></video>
+              <span
+                class="gallery-photo-label"
+                data-i18n="gallery_label_comfort"
+                >Комфорт</span
+              >
+              <span class="gallery-video-badge">
+                <i class="fa-solid fa-play"></i>
+                <span data-i18n="gallery_video_badge">Видео</span>
+              </span>
+              <button
+                class="gallery-view-btn"
+                type="button"
+                data-i18n="gallery_watch_btn"
+              >
+                Смотреть
+              </button>
+            </div>
+          </div>
+
+          <div class="gallery-action">
+            <a href="index.html" class="gallery-room-link">
+              <i class="fa-solid fa-arrow-left"></i>
+              <span data-i18n="gallery_back_home">Вернуться на главную</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer footer-pro">
+      <div class="container footer-grid">
+        <div>
+          <h3>ALTAY VILLAJ HOTEL</h3>
+          <p data-i18n="footer_about_text">
+            Уютный отель для спокойного отдыха среди красивой природы
+            Таш-Башата.
+          </p>
+        </div>
+
+        <div>
+          <h4 data-i18n="footer_nav_title">Навигация</h4>
+          <a href="index.html" data-i18n="nav_home">Главная</a>
+          <a href="about.html" data-i18n="nav_about">О нас</a>
+          <a href="rooms.html" data-i18n="nav_rooms">Номера</a>
+          <a href="gallery.html" data-i18n="nav_gallery">Галерея</a>
+          <a href="reviews.html" data-i18n="nav_reviews">Отзывы</a>
+          <a href="index.html#faq" data-i18n="nav_faq">FAQ</a>
+          <a href="index.html#contact" data-i18n="nav_contact">Контакты</a>
+        </div>
+
+        <div>
+          <h4 data-i18n="nav_contact">Контакты</h4>
+          <p>+996 501 595 598</p>
+          <p>example@gmail.com</p>
+          <p data-i18n="home_card_location">Таш-Башат, Кыргызстан</p>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p data-i18n="footer_text">
+          © 2026 Altay Villaj Hotel. Все права защищены.
+        </p>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      if (window.AOS) {
+        AOS.init({
+          duration: 900,
+          once: true,
+        });
+      }
+    </script>
+
+    <script src="lang.js"></script>
+    <script type="module" src="script.js"></script>
+    <script src="gallery.js"></script>
+    <script src="float-actions.js"></script>
+    <script src="secret-admin.js"></script>
+  </body>
+</html>

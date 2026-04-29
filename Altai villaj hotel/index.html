@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Altay Villaj Hotel | Главная</title>
+
+    <meta
+      name="description"
+      content="Altay Villaj Hotel — уютный отель в Таш-Башате. Красивые виды, спокойная атмосфера и комфортный отдых."
+    />
+
+    <meta property="og:title" content="Altay Villaj Hotel | Главная" />
+    <meta
+      property="og:description"
+      content="Уютный отель в Таш-Башате для спокойного отдыха среди красивой природы."
+    />
+    <meta property="og:image" content="images/gal16.jpeg" />
+    <meta property="og:type" content="website" />
+
+    <link rel="icon" type="image/jpeg" href="images/gal8.jpeg" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="home-gallery-beautiful.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  </head>
+
+  <body>
+    <header class="site-header" id="siteHeader">
+      <div class="container header-wrap">
+        <a href="index.html" class="logo">ALTAY VILLAJ HOTEL</a>
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          type="button"
+          aria-label="Открыть меню"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="nav" id="mainNav">
+          <a href="index.html" class="active-page" data-i18n="nav_home">
+            Главная
+          </a>
+
+          <a href="about.html" data-i18n="nav_about">О нас</a>
+          <a href="rooms.html" data-i18n="nav_rooms">Номера</a>
+          <a href="gallery.html" data-i18n="nav_gallery">Галерея</a>
+          <a href="reviews.html" data-i18n="nav_reviews">Отзывы</a>
+          <a href="#faq" data-i18n="nav_faq">FAQ</a>
+          <a href="#contact" data-i18n="nav_contact">Контакты</a>
+        </nav>
+
+        <div class="lang-switcher">
+          <button type="button" class="lang-btn active" data-lang="ru">
+            RU
+          </button>
+          <button type="button" class="lang-btn" data-lang="ky">KG</button>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+          <button type="button" class="lang-btn" data-lang="tr">TR</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero hero-pro" id="home">
+        <div class="container hero-pro-wrap">
+          <div class="hero-content hero-pro-content" data-aos="fade-right">
+            <span class="hero-badge" data-i18n="hero_badge">
+              Отдых на лоне природы
+            </span>
+
+            <h1 data-i18n="hero_title">
+              Altay Villaj Hotel — уют, тишина и красивая природа
+            </h1>
+
+            <p data-i18n="hero_text">
+              Семейный отдых, красивый горный вид, свежий воздух и комфортные
+              номера для гостей.
+            </p>
+
+            <div class="hero-buttons">
+              <a
+                href="about.html"
+                class="btn primary-btn"
+                data-i18n="about_more_btn"
+              >
+                Подробнее
+              </a>
+
+              <a
+                href="rooms.html#booking"
+                class="btn secondary-btn"
+                data-i18n="hero_btn_book"
+              >
+                Забронировать
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="container">
+          <div class="features-grid">
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="50">
+              <i class="fa-solid fa-mountain-sun"></i>
+
+              <h3 data-i18n="feature_1_title">Красивый вид</h3>
+
+              <p data-i18n="feature_1_text">
+                Особенный отдых среди гор, чистого воздуха и красивой природы.
+              </p>
+            </div>
+
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+              <i class="fa-solid fa-heart"></i>
+
+              <h3 data-i18n="feature_quiet_title">Тихая атмосфера</h3>
+
+              <p data-i18n="feature_quiet_text">
+                Спокойное место для отдыха вдали от городского шума.
+              </p>
+            </div>
+
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="150">
+              <i class="fa-solid fa-leaf"></i>
+
+              <h3 data-i18n="feature_nature_title">Живописная природа</h3>
+
+              <p data-i18n="feature_nature_text">
+                Красивые пейзажи и особая атмосфера для приятного отдыха.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about-preview">
+        <div class="container">
+          <div class="about-grid">
+            <div class="about-image" data-aos="fade-right">
+              <img src="images/10.jpeg" alt="Altay Villaj Hotel" />
+            </div>
+
+            <div class="about-content" data-aos="fade-left">
+              <div class="section-title left">
+                <h2 data-i18n="about_title">О нас</h2>
+                <p data-i18n="about_short_subtitle">Коротко о нашем отеле</p>
+              </div>
+
+              <p data-i18n="about_text_1">
+                Altay Villaj Hotel — это гостиница, созданная для спокойного и
+                комфортного отдыха среди красивой природы.
+              </p>
+
+              <p data-i18n="about_text_2">
+                Наша цель — подарить каждому гостю чистый номер, хорошее
+                обслуживание и приятную, запоминающуюся атмосферу.
+              </p>
+
+              <a
+                href="about.html"
+                class="btn primary-btn"
+                data-i18n="about_more_btn"
+              >
+                Подробнее
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section home-gallery-preview" id="gallery-preview">
+        <div class="container">
+          <div class="home-gallery-preview-head" data-aos="fade-up">
+            <div>
+              <span class="gallery-kicker">ALTAY VILLAJ HOTEL</span>
+
+              <h2 data-i18n="gallery_title">Галерея</h2>
+
+              <p data-i18n="home_gallery_preview_text">
+                Небольшая часть атмосферы отеля, природы, номеров и отдыха.
+                Полная галерея открывается на отдельной странице.
+              </p>
+            </div>
+
+            <a href="gallery.html" class="gallery-room-link">
+              <span data-i18n="home_gallery_open_btn">
+                Открыть всю галерею
+              </span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="home-gallery-preview-grid">
+            <a
+              href="gallery.html"
+              class="home-gallery-card home-gallery-big"
+              data-aos="zoom-in"
+            >
+              <video
+                src="images/gal1.mp4"
+                muted
+                loop
+                autoplay
+                playsinline
+                preload="metadata"
+              ></video>
+
+              <span
+                class="gallery-photo-label"
+                data-i18n="gallery_label_nature"
+              >
+                Природа
+              </span>
+
+              <span class="gallery-video-badge">
+                <i class="fa-solid fa-play"></i>
+                <span data-i18n="gallery_video_badge">Видео</span>
+              </span>
+            </a>
+
+            <a
+              href="gallery.html"
+              class="home-gallery-card"
+              data-aos="zoom-in"
+              data-aos-delay="80"
+            >
+              <img src="images/gal16.jpeg" alt="Панорамный вид на природу" />
+              <span
+                class="gallery-photo-label"
+                data-i18n="gallery_label_panorama"
+              >
+                Панорама
+              </span>
+            </a>
+
+            <a
+              href="gallery.html"
+              class="home-gallery-card"
+              data-aos="zoom-in"
+              data-aos-delay="140"
+            >
+              <img src="images/gal7.jpeg" alt="Национальная еда" />
+              <span class="gallery-photo-label" data-i18n="gallery_label_food">
+                Еда
+              </span>
+            </a>
+
+            <a
+              href="gallery.html"
+              class="home-gallery-card"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <img src="images/gal12.jpeg" alt="Номер отеля" />
+              <span class="gallery-photo-label" data-i18n="gallery_label_room">
+                Номер
+              </span>
+            </a>
+
+            <a
+              href="gallery.html"
+              class="home-gallery-card home-gallery-wide"
+              data-aos="zoom-in"
+              data-aos-delay="260"
+            >
+              <video
+                src="images/galkom.mp4"
+                muted
+                loop
+                autoplay
+                playsinline
+                preload="metadata"
+              ></video>
+
+              <span
+                class="gallery-photo-label"
+                data-i18n="gallery_label_comfort"
+              >
+                Комфорт
+              </span>
+
+              <span class="gallery-video-badge">
+                <i class="fa-solid fa-play"></i>
+                <span data-i18n="gallery_video_badge">Видео</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <h2 data-i18n="faq_title">Часто задаваемые вопросы</h2>
+
+            <p data-i18n="faq_subtitle">
+              Основная информация, которую чаще всего спрашивают гости
+            </p>
+          </div>
+
+          <div class="faq-list">
+            <div class="faq-item" data-aos="fade-up">
+              <button class="faq-question" type="button">
+                <span data-i18n="faq_1_q">Какое время заезда и выезда?</span>
+                <i class="fa-solid fa-plus"></i>
+              </button>
+
+              <div class="faq-answer">
+                <p data-i18n="faq_1_a">
+                  Заезд осуществляется днём, выезд — утром. Точное время можно
+                  уточнить у администрации.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="60">
+              <button class="faq-question" type="button">
+                <span data-i18n="faq_2_q">Есть ли Wi-Fi?</span>
+                <i class="fa-solid fa-plus"></i>
+              </button>
+
+              <div class="faq-answer">
+                <p data-i18n="faq_2_a">Да, для гостей доступен Wi-Fi.</p>
+              </div>
+            </div>
+
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="120">
+              <button class="faq-question" type="button">
+                <span data-i18n="faq_3_q">Можно ли приезжать с детьми?</span>
+                <i class="fa-solid fa-plus"></i>
+              </button>
+
+              <div class="faq-answer">
+                <p data-i18n="faq_3_a">
+                  Да, это место подходит для семейного отдыха.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="180">
+              <button class="faq-question" type="button">
+                <span data-i18n="faq_4_q">Нужно ли бронировать заранее?</span>
+                <i class="fa-solid fa-plus"></i>
+              </button>
+
+              <div class="faq-answer">
+                <p data-i18n="faq_4_a">
+                  Да, для уточнения свободных мест рекомендуется бронировать
+                  заранее.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <h2 data-i18n="contact_title">Контакты</h2>
+
+            <p data-i18n="contact_subtitle">Удобные способы связи с нами</p>
+          </div>
+
+          <div class="contact-layout">
+            <div class="contact-grid">
+              <div class="contact-card" data-aos="fade-up">
+                <h3>
+                  <i class="fa-solid fa-phone"></i>
+                  <span data-i18n="contact_phone_title">Телефон</span>
+                </h3>
+
+                <p>+996 501 595 598</p>
+
+                <a
+                  href="tel:+996501595598"
+                  class="contact-action-btn"
+                  data-i18n="contact_call_btn"
+                >
+                  Позвонить
+                </a>
+              </div>
+
+              <div class="contact-card" data-aos="fade-up" data-aos-delay="100">
+                <h3>
+                  <i class="fa-solid fa-envelope"></i>
+                  <span data-i18n="contact_email_title">Email</span>
+                </h3>
+
+                <p>example@gmail.com</p>
+
+                <a
+                  href="mailto:example@gmail.com"
+                  class="contact-action-btn"
+                  data-i18n="contact_email_btn"
+                >
+                  Написать
+                </a>
+              </div>
+
+              <div class="contact-card" data-aos="fade-up" data-aos-delay="200">
+                <h3>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <span data-i18n="contact_whatsapp_title">WhatsApp</span>
+                </h3>
+
+                <p>+996 501 595 598</p>
+
+                <a
+                  href="https://wa.me/996501595598"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact-action-btn whatsapp-btn"
+                  data-i18n="contact_whatsapp_btn"
+                >
+                  Открыть WhatsApp
+                </a>
+              </div>
+            </div>
+
+            <div class="map-card" data-aos="fade-left">
+              <h3 data-i18n="contact_map_title">Наше местоположение</h3>
+
+              <p data-i18n="contact_map_text">
+                Altay Village Hotel, 7 ул. Осконбаева, Таш-Башат 722911
+              </p>
+
+              <div class="map-frame">
+                <iframe
+                  src="https://www.google.com/maps?q=Таш-Башат&output=embed"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer footer-pro">
+      <div class="container footer-grid">
+        <div>
+          <h3>ALTAY VILLAJ HOTEL</h3>
+
+          <p data-i18n="footer_about_text">
+            Уютный отель для спокойного отдыха среди красивой природы
+            Таш-Башата.
+          </p>
+        </div>
+
+        <div>
+          <h4 data-i18n="footer_nav_title">Навигация</h4>
+
+          <a href="index.html" data-i18n="nav_home">Главная</a>
+          <a href="about.html" data-i18n="nav_about">О нас</a>
+          <a href="rooms.html" data-i18n="nav_rooms">Номера</a>
+          <a href="gallery.html" data-i18n="nav_gallery">Галерея</a>
+          <a href="reviews.html" data-i18n="nav_reviews">Отзывы</a>
+          <a href="#faq" data-i18n="nav_faq">FAQ</a>
+          <a href="#contact" data-i18n="nav_contact">Контакты</a>
+        </div>
+
+        <div>
+          <h4 data-i18n="nav_contact">Контакты</h4>
+
+          <p>+996 501 595 598</p>
+          <p>example@gmail.com</p>
+          <p data-i18n="home_card_location">Таш-Башат, Кыргызстан</p>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p data-i18n="footer_text">
+          © 2026 Altay Villaj Hotel. Все права защищены.
+        </p>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      if (window.AOS) {
+        AOS.init({
+          duration: 900,
+          once: true,
+        });
+      }
+    </script>
+
+    <script src="lang.js"></script>
+    <script type="module" src="script.js"></script>
+    <script src="float-actions.js"></script>
+    <script src="secret-admin.js"></script>
+    <script type="module" src="announcement-public.js"></script>
+  </body>
+</html>

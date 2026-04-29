@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Altay Villaj Hotel | О нас</title>
+
+    <meta
+      name="description"
+      content="Altay Villaj Hotel — уютный эко-отель в селе Таш-Башат у подножия гор."
+    />
+
+    <meta property="og:title" content="Altay Villaj Hotel | О нас" />
+    <meta
+      property="og:description"
+      content="История Altay Villaj Hotel, атмосфера Таш-Башата, экологичный стиль, чистый воздух и отдых среди природы."
+    />
+    <meta property="og:image" content="images/about2.jpeg" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/jpeg" href="images/gal8.jpeg" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  </head>
+
+  <body>
+    <header class="site-header" id="siteHeader">
+      <div class="container header-wrap">
+        <a href="index.html" class="logo">ALTAY VILLAJ HOTEL</a>
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          type="button"
+          aria-label="Открыть меню"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="nav" id="mainNav">
+          <a href="index.html" data-i18n="nav_home">Главная</a>
+
+          <a
+            href="about.html"
+            class="active-page"
+            aria-current="page"
+            data-i18n="nav_about"
+          >
+            О нас
+          </a>
+
+          <a href="rooms.html" data-i18n="nav_rooms">Номера</a>
+          <a href="index.html#gallery" data-i18n="nav_gallery">Галерея</a>
+          <a href="reviews.html" data-i18n="nav_reviews">Отзывы</a>
+          <a href="index.html#faq" data-i18n="nav_faq">FAQ</a>
+          <a href="index.html#contact" data-i18n="nav_contact">Контакты</a>
+        </nav>
+
+        <div class="lang-switcher">
+          <button type="button" class="lang-btn active" data-lang="ru">
+            RU
+          </button>
+          <button type="button" class="lang-btn" data-lang="ky">KG</button>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+          <button type="button" class="lang-btn" data-lang="tr">TR</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="about-cinematic-hero">
+        <div class="container about-cinematic-wrap">
+          <div class="about-cinematic-content" data-aos="fade-right">
+            <span class="about-cinematic-badge" data-i18n="about_new_tag">
+              Эко-отель у подножия гор
+            </span>
+
+            <h1 data-i18n="about_new_title">
+              Altay Villaj Hotel — история природы, простоты и настоящего уюта
+            </h1>
+
+            <p data-i18n="about_new_text">
+              Наш отель находится в красивом селе Таш-Башат, в Калининской
+              долине, у подножия гор. Это место, где чистый воздух, тишина,
+              натуральные материалы и красивые виды создают особенную атмосферу
+              отдыха.
+            </p>
+
+            <div class="about-cinematic-actions">
+              <a
+                href="rooms.html"
+                class="about-room-link"
+                data-i18n="about_rooms_btn"
+              >
+                Посмотреть номера
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+
+              <a
+                href="rooms.html#booking"
+                class="btn secondary-btn"
+                data-i18n="cta_btn"
+              >
+                Перейти к форме бронирования
+              </a>
+            </div>
+          </div>
+
+          <div class="about-cinematic-side" data-aos="fade-left">
+            <div class="about-floating-card">
+              <div class="about-floating-item">
+                <i class="fa-solid fa-mountain"></i>
+                <div>
+                  <strong data-i18n="about_fact_1_title">Местоположение</strong>
+                  <span data-i18n="about_fact_1_text">
+                    Таш-Башат, Калининская долина
+                  </span>
+                </div>
+              </div>
+
+              <div class="about-floating-item">
+                <i class="fa-solid fa-seedling"></i>
+                <div>
+                  <strong data-i18n="about_fact_2_title">Стиль</strong>
+                  <span data-i18n="about_fact_2_text">
+                    Экологичные материалы и натуральная атмосфера
+                  </span>
+                </div>
+              </div>
+
+              <div class="about-floating-item">
+                <i class="fa-solid fa-wind"></i>
+                <div>
+                  <strong data-i18n="about_fact_3_title">Особенность</strong>
+                  <span data-i18n="about_fact_3_text">
+                    Чистый воздух, балконы и красивая природа
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about-photo-story">
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <h2 data-i18n="about_gallery_title">Живая атмосфера места</h2>
+            <p data-i18n="about_gallery_text">
+              Моменты, которые передают настроение отдыха, природы и теплой
+              атмосферы Altay Villaj Hotel.
+            </p>
+          </div>
+
+          <div class="about-photo-grid">
+            <div class="about-photo-card about-photo-tall" data-aos="zoom-in">
+              <img
+                src="images/about2.jpeg"
+                alt="Отдых гостей в Altay Villaj Hotel"
+              />
+              <div class="about-photo-overlay">
+                <h3 data-i18n="about_photo_1_title">Теплая атмосфера</h3>
+                <p data-i18n="about_photo_1_text">
+                  Место, где люди собираются, отдыхают и чувствуют простую
+                  человеческую теплоту.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="about-photo-card"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <img src="images/about1.jpeg" alt="Атмосфера отдыха" />
+              <div class="about-photo-overlay">
+                <h3 data-i18n="about_photo_2_title">Живое общение</h3>
+                <p data-i18n="about_photo_2_text">
+                  Здесь отдых чувствуется не только в природе, но и в теплой,
+                  живой атмосфере рядом с людьми.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="about-photo-card"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <img src="images/about3.jpeg" alt="Вечер у костра" />
+              <div class="about-photo-overlay">
+                <h3 data-i18n="about_photo_3_title">Вечерняя атмосфера</h3>
+                <p data-i18n="about_photo_3_text">
+                  Тишина, огонь, горный воздух и особенное ощущение покоя делают
+                  такие вечера незабываемыми.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about-story-section">
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <h2 data-i18n="about_story_title">История создания</h2>
+            <p data-i18n="about_story_subtitle">
+              Как появилась идея Altay Villaj Hotel
+            </p>
+          </div>
+
+          <div class="about-story-grid">
+            <div class="about-story-card" data-aos="fade-up">
+              <span class="about-story-year">2019</span>
+              <h3 data-i18n="about_story_card_1_title">Начало проекта</h3>
+              <p data-i18n="about_story_card_1_text">
+                Житель села Таш-Башат Улан Үсөйүн в 2019 году начал
+                строительство Altay Villaj Hotel с идеей создать спокойное место
+                отдыха в гармонии с природой.
+              </p>
+            </div>
+
+            <div
+              class="about-story-card"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <span class="about-story-year" data-i18n="about_story_year_2">
+                Идея
+              </span>
+              <h3 data-i18n="about_story_card_2_title">
+                Простая и натуральная архитектура
+              </h3>
+              <p data-i18n="about_story_card_2_text">
+                Отель строился в простом, но особенном стиле: с использованием
+                чёрной штукатурки, самана и натуральных материалов, чтобы
+                сохранить тепло, естественность и экологичность.
+              </p>
+            </div>
+
+            <div
+              class="about-story-card"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <span class="about-story-year" data-i18n="about_story_year_3">
+                Особенность
+              </span>
+              <h3 data-i18n="about_story_card_3_title">
+                Новая жизнь старых построек
+              </h3>
+              <p data-i18n="about_story_card_3_text">
+                Некоторые нынешние здания отеля до этого были хозяйственными
+                постройками — коровником и овчарней. Со временем они получили
+                новую жизнь и превратились в уютное пространство для гостей.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about-video-pro">
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <h2 data-i18n="about_video_title">Видео от владельца</h2>
+            <p data-i18n="about_video_text">
+              История создания Altay Villaj Hotel
+            </p>
+          </div>
+
+          <div class="video-pro-wrapper" data-aos="zoom-in">
+            <div class="video-overlay" id="videoOverlay">
+              <div class="video-overlay-content">
+                <button
+                  id="playVideoBtn"
+                  class="play-btn"
+                  type="button"
+                  data-i18n="about_video_play"
+                >
+                  ▶ Смотреть видео
+                </button>
+
+                <a
+                  href="https://www.instagram.com/reel/DOV4IWhiKYC/?igsh=eHNtZ2drY2QzZHY1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="insta-btn"
+                  data-i18n="about_video_instagram"
+                >
+                  Instagram
+                </a>
+              </div>
+            </div>
+
+            <iframe
+              id="instaVideo"
+              src=""
+              data-src="https://www.instagram.com/reel/DOV4IWhiKYC/embed/"
+              title="Instagram video about Altay Villaj Hotel"
+              loading="lazy"
+              allow="
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                picture-in-picture;
+                web-share;
+              "
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about-origin-section">
+        <div class="container">
+          <div class="about-origin-split">
+            <div class="about-origin-panel dark" data-aos="fade-right">
+              <span class="about-origin-mini" data-i18n="about_origin_mini">
+                Атмосфера места
+              </span>
+              <h2 data-i18n="about_origin_title">
+                Не просто отель, а место с характером
+              </h2>
+              <p data-i18n="about_origin_text_1">
+                Altay Villaj Hotel отличается не роскошью, а настоящей
+                атмосферой. Здесь важны не только комнаты, но и само ощущение
+                места: естественные формы, экологически чистые материалы,
+                сельская тишина и спокойный ритм жизни.
+              </p>
+            </div>
+
+            <div class="about-origin-panel light" data-aos="fade-left">
+              <p data-i18n="about_origin_text_2">
+                Именно эта простота делает отдых особенным. Гости чувствуют
+                здесь не искусственный гостиничный стиль, а живую связь с селом,
+                природой и настоящим уютом.
+              </p>
+
+              <ul class="about-list">
+                <li data-i18n="about_origin_list_1">
+                  Экологически чистые материалы
+                </li>
+                <li data-i18n="about_origin_list_2">
+                  История зданий и натуральный стиль
+                </li>
+                <li data-i18n="about_origin_list_3">
+                  Тишина и отдых без городской суеты
+                </li>
+                <li data-i18n="about_origin_list_4">
+                  Простая, теплая и живая атмосфера
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about-highlights-section">
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <h2 data-i18n="about_highlights_title">
+              Что делает нас особенными
+            </h2>
+            <p data-i18n="about_highlights_subtitle">
+              Несколько вещей, которые особенно запоминаются гостям
+            </p>
+          </div>
+
+          <div class="about-highlights-grid">
+            <div class="about-highlight-card" data-aos="zoom-in">
+              <i class="fa-solid fa-wind"></i>
+              <h3 data-i18n="about_highlight_1_title">Чистый воздух</h3>
+              <p data-i18n="about_highlight_1_text">
+                Село находится у подножия гор, поэтому здесь особенно свежий
+                воздух и спокойная атмосфера.
+              </p>
+            </div>
+
+            <div
+              class="about-highlight-card"
+              data-aos="zoom-in"
+              data-aos-delay="80"
+            >
+              <i class="fa-solid fa-panorama"></i>
+              <h3 data-i18n="about_highlight_2_title">
+                Красивые балконы и виды
+              </h3>
+              <p data-i18n="about_highlight_2_text">
+                Балконы отеля позволяют наслаждаться природой, рассветом,
+                воздухом и видом на окружающее пространство.
+              </p>
+            </div>
+
+            <div
+              class="about-highlight-card"
+              data-aos="zoom-in"
+              data-aos-delay="160"
+            >
+              <i class="fa-solid fa-leaf"></i>
+              <h3 data-i18n="about_highlight_3_title">Экологичный стиль</h3>
+              <p data-i18n="about_highlight_3_text">
+                Натуральные материалы и простая архитектура создают ощущение
+                уюта и экологической чистоты.
+              </p>
+            </div>
+
+            <div
+              class="about-highlight-card"
+              data-aos="zoom-in"
+              data-aos-delay="240"
+            >
+              <i class="fa-solid fa-utensils"></i>
+              <h3 data-i18n="about_highlight_4_title">Домашняя еда</h3>
+              <p data-i18n="about_highlight_4_text">
+                Одной из особенностей места является еда, которая дополняет
+                отдых простотой, теплом и вкусом.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about-village-section">
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <h2 data-i18n="about_village_title">О селе Таш-Башат</h2>
+            <p data-i18n="about_village_subtitle">
+              Спокойное место в Калининской долине у подножия гор
+            </p>
+          </div>
+
+          <div class="about-village-layout">
+            <div class="about-village-text" data-aos="fade-right">
+              <p data-i18n="about_village_text_1">
+                Таш-Башат — красивое и спокойное село, расположенное в
+                Калининской долине, у подножия гор. Это место привлекает
+                открытым пространством, естественной тишиной и ощущением
+                близости к природе.
+              </p>
+
+              <p data-i18n="about_village_text_2">
+                Здесь особенно чувствуется сельская гармония: чистый воздух,
+                простая жизнь, красивые виды и уютная атмосфера. Именно поэтому
+                отдых в таком месте ощущается глубже и спокойнее, чем в обычном
+                городе.
+              </p>
+            </div>
+
+            <div class="about-village-points" data-aos="fade-left">
+              <div class="about-village-point">
+                <i class="fa-solid fa-check"></i>
+                <span data-i18n="about_village_point_1">
+                  Расположение у подножия гор
+                </span>
+              </div>
+
+              <div class="about-village-point">
+                <i class="fa-solid fa-check"></i>
+                <span data-i18n="about_village_point_2">
+                  Спокойная сельская атмосфера
+                </span>
+              </div>
+
+              <div class="about-village-point">
+                <i class="fa-solid fa-check"></i>
+                <span data-i18n="about_village_point_3">
+                  Чистый воздух и открытые виды
+                </span>
+              </div>
+
+              <div class="about-village-point">
+                <i class="fa-solid fa-check"></i>
+                <span data-i18n="about_village_point_4">
+                  Хорошее место для отдыха от городской суеты
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <div class="container">
+          <div class="cta-box" data-aos="zoom-in">
+            <h2 data-i18n="about_final_cta_title">
+              Почувствуйте атмосферу Altay Villaj Hotel
+            </h2>
+            <p data-i18n="about_final_cta_text">
+              Природа, экологичный стиль, балконы с красивым видом и спокойствие
+              Таш-Башата ждут вас.
+            </p>
+
+            <a
+              href="rooms.html#booking"
+              class="btn secondary-btn"
+              data-i18n="cta_btn"
+            >
+              Перейти к форме бронирования
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer footer-pro">
+      <div class="container footer-grid">
+        <div>
+          <h3>ALTAY VILLAJ HOTEL</h3>
+          <p data-i18n="footer_about_text">
+            Уютный отель для спокойного отдыха среди красивой природы
+            Таш-Башата.
+          </p>
+        </div>
+
+        <div>
+          <h4 data-i18n="footer_nav_title">Навигация</h4>
+          <a href="index.html" data-i18n="nav_home">Главная</a>
+          <a href="about.html" data-i18n="nav_about">О нас</a>
+          <a href="rooms.html" data-i18n="nav_rooms">Номера</a>
+          <a href="index.html#gallery" data-i18n="nav_gallery">Галерея</a>
+          <a href="reviews.html" data-i18n="nav_reviews">Отзывы</a>
+          <a href="index.html#faq" data-i18n="nav_faq">FAQ</a>
+          <a href="index.html#contact" data-i18n="nav_contact">Контакты</a>
+        </div>
+
+        <div>
+          <h4 data-i18n="nav_contact">Контакты</h4>
+          <p>+996 501 595 598</p>
+          <p>example@gmail.com</p>
+          <p data-i18n="home_card_location">Таш-Башат, Кыргызстан</p>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p data-i18n="footer_text">
+          © 2026 Altay Villaj Hotel. Все права защищены.
+        </p>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      if (window.AOS) {
+        AOS.init({
+          duration: 900,
+          once: true,
+        });
+      }
+    </script>
+
+    <script src="lang.js"></script>
+    <script type="module" src="script.js"></script>
+    <script src="float-actions.js"></script>
+    <script src="secret-admin.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const playVideoBtn = document.getElementById("playVideoBtn");
+        const instaVideo = document.getElementById("instaVideo");
+        const videoOverlay = document.getElementById("videoOverlay");
+
+        if (!playVideoBtn || !instaVideo || !videoOverlay) return;
+
+        playVideoBtn.addEventListener("click", () => {
+          const videoSrc = instaVideo.dataset.src;
+
+          if (videoSrc && !instaVideo.src) {
+            instaVideo.src = videoSrc;
+          }
+
+          videoOverlay.style.display = "none";
+        });
+      });
+    </script>
+  </body>
+</html>
