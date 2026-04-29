@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>AltayVilage_Hotel | Админ-панель</title>
+
+    <meta name="robots" content="noindex, nofollow" />
+    <meta
+      name="description"
+      content="Административная панель AltayVilage_Hotel для управления бронированиями и отзывами."
+    />
+
+    <link rel="icon" type="image/jpeg" href="images/gal8.jpeg" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="admin.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+
+  <body class="admin-page">
+    <div class="admin-login-overlay" id="adminLoginOverlay">
+      <div class="admin-login-box">
+        <div class="admin-lang-switcher">
+          <button type="button" class="admin-lang-btn active" data-lang="ru">
+            RU
+          </button>
+
+          <button type="button" class="admin-lang-btn" data-lang="ky">
+            KG
+          </button>
+
+          <button type="button" class="admin-lang-btn" data-lang="en">
+            EN
+          </button>
+
+          <button type="button" class="admin-lang-btn" data-lang="tr">
+            TR
+          </button>
+        </div>
+
+        <h2 data-i18n-admin="login_title">Вход в админ-панель</h2>
+
+        <p data-i18n-admin="login_text">Введите пароль администратора</p>
+
+        <form id="adminLoginForm" class="admin-login-form">
+          <input
+            type="password"
+            id="adminPassword"
+            placeholder="Введите пароль"
+            data-i18n-admin-placeholder="login_placeholder"
+            autocomplete="current-password"
+            required
+          />
+
+          <button
+            type="submit"
+            class="btn primary-btn"
+            data-i18n-admin="login_btn"
+          >
+            Войти
+          </button>
+        </form>
+
+        <div class="login-error" id="loginError"></div>
+
+        <a href="index.html" class="back-link" data-i18n-admin="back_site">
+          ← Вернуться на сайт
+        </a>
+      </div>
+    </div>
+
+    <div id="adminPanel" style="display: none">
+      <header class="admin-header">
+        <div class="container admin-top">
+          <div>
+            <h1 data-i18n-admin="panel_title">Административная панель</h1>
+
+            <div class="admin-header-subtitle">
+              AltayVilage_Hotel — booking & reviews control center
+            </div>
+          </div>
+
+          <div class="admin-actions-wrap">
+            <div class="admin-lang-switcher">
+              <button
+                type="button"
+                class="admin-lang-btn active"
+                data-lang="ru"
+              >
+                RU
+              </button>
+
+              <button type="button" class="admin-lang-btn" data-lang="ky">
+                KG
+              </button>
+
+              <button type="button" class="admin-lang-btn" data-lang="en">
+                EN
+              </button>
+
+              <button type="button" class="admin-lang-btn" data-lang="tr">
+                TR
+              </button>
+            </div>
+
+            <div class="admin-actions">
+              <a
+                href="index.html"
+                class="btn secondary-btn"
+                data-i18n-admin="back_site_btn"
+              >
+                Вернуться на сайт
+              </a>
+
+              <button
+                id="exportBtn"
+                class="btn primary-btn export-btn"
+                type="button"
+                data-i18n-admin="export_btn"
+              >
+                Скачать Excel
+              </button>
+
+              <button
+                id="logoutBtn"
+                class="btn logout-btn"
+                type="button"
+                data-i18n-admin="logout_btn"
+              >
+                Выйти
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="admin-main">
+        <div class="container">
+          <div class="admin-hero-strip">
+            <div class="admin-hero-card">
+              <h3 data-i18n-admin="hero_bookings_title">Бронирования</h3>
+
+              <p data-i18n-admin="hero_bookings_text">
+                Все брони клиентов отображаются отдельно и управляются в своём
+                блоке.
+              </p>
+            </div>
+
+            <div class="admin-hero-card">
+              <h3 data-i18n-admin="hero_reviews_title">Отзывы</h3>
+
+              <p data-i18n-admin="hero_reviews_text">
+                Отзывы полностью отдельно от брони: одобрение, скрытие,
+                удаление.
+              </p>
+            </div>
+
+            <div class="admin-hero-card">
+              <h3 data-i18n-admin="hero_moderation_title">Модерация</h3>
+
+              <p data-i18n-admin="hero_moderation_text">
+                На сайт попадают только одобренные отзывы, а брони и отзывы не
+                смешиваются.
+              </p>
+            </div>
+          </div>
+
+          <section class="admin-section-box">
+            <h2 data-i18n-admin="manage_title">Управление бронированиями</h2>
+
+            <p data-i18n-admin="manage_text">
+              Администратор может просматривать, искать, фильтровать, изменять
+              статус, удалять и экспортировать заявки клиентов.
+            </p>
+
+            <div class="stats-grid">
+              <div class="stat-card">
+                <h3 data-i18n-admin="total_bookings">Все заявки</h3>
+                <p id="totalCount">0</p>
+              </div>
+
+              <div class="stat-card">
+                <h3 data-i18n-admin="new_bookings">Новые</h3>
+                <p id="newCount">0</p>
+              </div>
+
+              <div class="stat-card">
+                <h3 data-i18n-admin="confirmed_bookings">Подтверждённые</h3>
+                <p id="confirmedCount">0</p>
+              </div>
+
+              <div class="stat-card">
+                <h3 data-i18n-admin="cancelled_bookings">Отменённые</h3>
+                <p id="cancelledCount">0</p>
+              </div>
+
+              <div class="stat-card">
+                <h3 data-i18n-admin="completed_bookings">Завершённые</h3>
+                <p id="completedCount">0</p>
+              </div>
+            </div>
+
+            <div class="admin-filters">
+              <input
+                type="text"
+                id="searchInput"
+                class="admin-search"
+                placeholder="Поиск по имени, телефону, email..."
+                data-i18n-admin-placeholder="search_placeholder"
+              />
+
+              <select id="statusFilter" class="status-filter">
+                <option value="Все" data-i18n-admin="filter_all">
+                  Все статусы
+                </option>
+
+                <option value="Новая" data-i18n-admin="status_new">
+                  Новая
+                </option>
+
+                <option value="Подтверждена" data-i18n-admin="status_confirmed">
+                  Подтверждена
+                </option>
+
+                <option value="Отменена" data-i18n-admin="status_cancelled">
+                  Отменена
+                </option>
+
+                <option value="Завершена" data-i18n-admin="status_completed">
+                  Завершена
+                </option>
+              </select>
+            </div>
+
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th data-i18n-admin="th_name">Имя</th>
+                    <th data-i18n-admin="th_phone">Телефон</th>
+                    <th data-i18n-admin="th_email">Email</th>
+                    <th data-i18n-admin="th_room">Тип номера</th>
+                    <th data-i18n-admin="th_guests">Гости</th>
+                    <th data-i18n-admin="th_checkin">Заезд</th>
+                    <th data-i18n-admin="th_checkout">Выезд</th>
+                    <th data-i18n-admin="th_comment">Комментарий</th>
+                    <th data-i18n-admin="th_status">Статус</th>
+                    <th data-i18n-admin="th_created">Дата заявки</th>
+                    <th data-i18n-admin="th_actions">Действия</th>
+                  </tr>
+                </thead>
+
+                <tbody id="booking-list">
+                  <tr>
+                    <td
+                      colspan="11"
+                      class="empty-row"
+                      data-i18n-admin="loading"
+                    >
+                      Загрузка заявок...
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="booking-table-hint" data-i18n-admin="bookings_hint">
+              Здесь только брони.
+            </div>
+          </section>
+
+          <section class="admin-section-box" style="margin-top: 24px">
+            <h2 data-i18n-admin="reviews_manage_title">Управление отзывами</h2>
+
+            <p data-i18n-admin="reviews_manage_text">
+              Здесь отзывы клиентов модерируются отдельно от брони.
+            </p>
+
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th data-i18n-admin="review_th_name">Имя</th>
+                    <th data-i18n-admin="review_th_rating">Оценка</th>
+                    <th data-i18n-admin="review_th_text">Отзыв</th>
+                    <th data-i18n-admin="review_th_status">Статус</th>
+                    <th data-i18n-admin="review_th_created">Дата</th>
+                    <th data-i18n-admin="review_th_actions">Действия</th>
+                  </tr>
+                </thead>
+
+                <tbody id="reviewsAdminList">
+                  <tr>
+                    <td
+                      colspan="6"
+                      class="empty-row"
+                      data-i18n-admin="reviews_loading"
+                    >
+                      Загрузка отзывов...
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="booking-table-hint" data-i18n-admin="reviews_hint">
+              Здесь только отзывы.
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="admin-lang.js"></script>
+    <script type="module" src="admin.js"></script>
+    <script type="module" src="admin-announcements.js"></script>
+  </body>
+</html>
